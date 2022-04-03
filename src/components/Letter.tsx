@@ -2,8 +2,8 @@ import React, { useContext } from "react";
 import { AppContext } from "../App";
 
 type Props = {
-  letterPos: string;
-  attemptVal: string;
+  letterPos: number;
+  attemptVal: number;
 };
 
 const Letter = ({ letterPos, attemptVal }: Props) => {
