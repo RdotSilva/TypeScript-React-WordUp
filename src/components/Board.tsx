@@ -1,11 +1,9 @@
-import React, { useState } from "react";
-import { boardDefault } from "../utils/board";
+import React from "react";
 import Letter from "./Letter";
 
 type Props = {};
 
 const Board = (props: Props) => {
-  const [board, setBoard] = useState(boardDefault);
   return (
     <div>
       <div>
