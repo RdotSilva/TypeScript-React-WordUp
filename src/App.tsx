@@ -4,7 +4,8 @@ import Board from "./components/Board";
 import Keyboard from "./components/Keyboard";
 import { boardDefault } from "./utils/board";
 
-export const AppContext = createContext({});
+// TODO: Fix this type, was having issues getting it to play nice with useState
+export const AppContext = React.createContext<any>([]);
 
 function App() {
   const [board, setBoard] = useState(boardDefault);
