@@ -11,7 +11,11 @@ const Letter = ({ letterPos, attemptVal }: Props) => {
 
   const letter = board[attemptVal][letterPos];
 
-  return <div className="border-solid border-2 border-sky-500">{letter}</div>;
+  return (
+    <div className="border-solid border-2 border-sky-500 col-span-1">
+      <p className="text-5xl">{letter}</p>
+    </div>
+  );
 };
 
 export default Letter;
