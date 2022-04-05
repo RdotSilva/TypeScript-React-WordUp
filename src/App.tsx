@@ -1,7 +1,7 @@
 import React, { createContext, useState } from "react";
 import "./App.css";
 import Board from "./components/Board";
-import Keyboard from "./components/Keyboard";
+import Keyboard from "./components/Keyboard/Keyboard";
 import { boardDefault } from "./utils/board";
 
 // TODO: Fix this type, was having issues getting it to play nice with useState
