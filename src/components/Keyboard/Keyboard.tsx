@@ -1,4 +1,5 @@
 import React from "react";
+import Key from "./Key";
 
 type Props = {};
 
@@ -12,17 +13,17 @@ const Keyboard = (props: Props) => {
       <div className="grid grid-rows-3 gap-2 w-30">
         <div className="grid grid-cols-10 gap-1">
           {keys1.map((key) => {
-            return <div>{key}</div>;
+            return <Key keyVal={key} />;
           })}
         </div>
         <div className="grid grid-cols-9 gap-1">
           {keys2.map((key) => {
-            return <div>{key}</div>;
+            return <Key keyVal={key} />;
           })}
         </div>
         <div className="grid grid-cols-7 gap-1">
           {keys3.map((key) => {
-            return <div>{key}</div>;
+            return <Key keyVal={key} />;
           })}
         </div>
       </div>
