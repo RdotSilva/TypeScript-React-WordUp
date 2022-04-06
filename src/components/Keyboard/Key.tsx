@@ -1,9 +1,11 @@
 import React from "react";
 
-type Props = {};
+type Props = {
+  keyVal: string;
+};
 
-const Key = (props: Props) => {
-  return <div>TODO: Create key component</div>;
+const Key = ({ keyVal }: Props) => {
+  return <div>{keyVal}</div>;
 };
 
 export default Key;
