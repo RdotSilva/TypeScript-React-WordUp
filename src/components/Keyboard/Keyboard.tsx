@@ -22,11 +22,11 @@ const Keyboard = (props: Props) => {
           })}
         </div>
         <div className="grid grid-cols-9 gap-1">
-          <Key keyVal={"ENTER"} />
+          <Key keyVal={"ENTER"} bigKey />
           {keys3.map((key) => {
             return <Key keyVal={key} />;
           })}
-          <Key keyVal={"DELETE"} />
+          <Key keyVal={"DELETE"} bigKey />
         </div>
       </div>
     </div>
