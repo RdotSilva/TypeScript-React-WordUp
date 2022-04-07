@@ -21,9 +21,11 @@ const Keyboard = (props: Props) => {
         })}
       </div>
       <div className="flex justify-center mb-1">
+        <Key keyVal={"ENTER"} bigKey />
         {keys3.map((key) => {
           return <Key keyVal={key} />;
         })}
+        <Key keyVal={"DELETE"} bigKey />
       </div>
     </div>
   );
