@@ -9,25 +9,21 @@ const Keyboard = (props: Props) => {
   const keys3 = ["Z", "X", "C", "V", "B", "N", "M"];
 
   return (
-    <div className="flex justify-center">
-      <div className="grid grid-rows-3 gap-2 w-30">
-        <div className="grid grid-cols-10 gap-1">
-          {keys1.map((key) => {
-            return <Key keyVal={key} />;
-          })}
-        </div>
-        <div className="grid grid-cols-9 gap-1">
-          {keys2.map((key) => {
-            return <Key keyVal={key} />;
-          })}
-        </div>
-        <div className="grid grid-cols-9 gap-1">
-          <Key keyVal={"ENTER"} bigKey />
-          {keys3.map((key) => {
-            return <Key keyVal={key} />;
-          })}
-          <Key keyVal={"DELETE"} bigKey />
-        </div>
+    <div>
+      <div className="flex justify-center mb-1">
+        {keys1.map((key) => {
+          return <Key keyVal={key} />;
+        })}
+      </div>
+      <div className="flex justify-center mb-1">
+        {keys2.map((key) => {
+          return <Key keyVal={key} />;
+        })}
+      </div>
+      <div className="flex justify-center mb-1">
+        {keys3.map((key) => {
+          return <Key keyVal={key} />;
+        })}
       </div>
     </div>
   );
